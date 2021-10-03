@@ -10,18 +10,26 @@
   <header class="page-header">
     <nav class="navigation">
       <a class="navigation-logo" href="index.html">
-        <img class="page-header-logo" alt="Логотип магазина Девайс»" src="">
+        <img class="page-header-logo" alt="Логотип магазина Девайс»" width="145" height="36"
+          src="img/header-logo/logo_black.svg">
       </a>
       <ul class="navigation-list navigation-user">
-        <li class="navigation-item"><a class="navigation-link" href="#">Поиск по сайту</a></li>
-        <li class="navigation-item"><a class="navigation-link" href="#">Коля Петухов</a></li>
-        <li class="navigation-item"><a class="navigation-link" href="#">Выйти</a></li>
-        <li class="navigation-item"><a class="navigation-link" href="#">Сравнить</a></li>
-        <li class="navigation-item"><a class="navigation-link" href="#">Корзина</a></li>
+        <li class="navigation-item"><a class="navigation-link" href="#">
+            <img class="navigation-logo" src="img/header-logo/search.svg" alt="Поиск по сайту" width="16"
+              height="16">Поиск по сайту</a></li>
+        <li class="navigation-item"><a class="navigation-link" href="#">
+            <img class="navigation-logo" src="img/header-logo/user.svg" alt="Войти" width="13" height="12">Войти</a>
+        </li>
+        <li class="navigation-item"><a class="navigation-link" href="#">
+            <img class="navigation-logo" src="img/header-logo/compare.svg" alt="Войти" width="10"
+              height="12">Сравнить</a></li>
+        <li class="navigation-item"><a class="navigation-link" href="#">
+            <img class="navigation-logo" src="img/header-logo/cart.svg" alt="Войти" width="16" height="14">Корзина</a>
+        </li>
       </ul>
       <ul class="navigation-list">
-        <li class="navigation-item"><a class="navigation-link navigation-link-current" href="catalog.html">Каталог
-            товаров</a></li>
+        <li class="navigation-item"><a class="navigation-link" href="catalog.html">Каталог товаров</a><img
+            class="navigation-plus" src="img/header-logo/plus_1.svg" alt="Плюс" width="16" height="16"> </li>
         <li class="navigation-item"><a class="navigation-link" href="#">Доставка</a></li>
         <li class="navigation-item"><a class="navigation-link" href="#">Гарантия</a></li>
         <li class="navigation-item"><a class="navigation-link" href="#">Контакты</a></li>
@@ -125,9 +133,13 @@
           <button class="visually-hidden" type="submit">Отсортировать продукты</button>
           <button class="sorting-ascending" type="button">
             <span class="visually-hidden">По возрастанию</span>
+            <img class="sorting-ascending-image" width="11" height="10" src="img/catalog/sort-up.svg"
+          alt="По возрастанию">
           </button>
           <button class="sorting-descending" type="button">
             <span class="visually-hidden">По убыванию</span>
+            <img class="sorting-descending-image" width="11" height="10" src="img/catalog/sort-down.svg"
+          alt="По e,sdfyb.">
           </button>
         </form>
       </div>
@@ -135,7 +147,7 @@
         <ul class="product-list">
           <li class="poduct-item">
             <a class="product-item-link" href="#">
-              <img class="product-item-image" src="" alt="">
+              <img class="product-item-image" src="img/catalog/product-1.jpg" width="360" height="380" alt="">
               <h3 class="product-item-title">Любительская селфи-палка</h3>
             </a>
             <b class="product-item-price">500 ₽</b>
@@ -143,7 +155,7 @@
           </li>
           <li class="product-item">
             <a class="product-item-link" href="#">
-              <img class="product-item-image" src="" alt="">
+              <img class="product-item-image" src="img/catalog/product-2.jpg" width="360" height="380" alt="">
               <h3 class="product-item-title">Профессиональная селфи-палка</h3>
             </a>
             <b class="product-item-price">1500 ₽</b>
@@ -152,7 +164,7 @@
           </li>
           <li class="product-item">
             <a class="product-item-link" href="#">
-              <img class="product-item-image" src="" alt="">
+              <img class="product-item-image" src="img/catalog/product-3.jpg" width="360" height="380" alt="">
               <h3 class="product-item-title">Непотопляемая селфи-палка</h3>
             </a>
             <b class="product-item-price">2500 ₽</b>
@@ -160,7 +172,7 @@
           </li>
           <li class="product-item">
             <a class="product-item-link" href="#">
-              <img class="product-item-image" src="" alt="">
+              <img class="product-item-image" src="img/catalog/product-4.jpg" width="360" height="380" alt="">
               <h3 class="product-item-title">Селфи-палка «Следуй за мной»</h3>
             </a>
             <b class="product-item-price">4900 ₽</b>
@@ -210,7 +222,8 @@
     <section class="footer-contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <a class="navigation-logo" href="index.html">
-        <img class="page-footer-logo" alt="Логотип магазина Девайс»" src="">
+        <img class="page-header-logo" alt="Логотип магазина Девайс»" width="145" height="36"
+          src="img/footer-logo/logo_yellow.svg">
       </a>
       <address class="footer-contacts-address">
         <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
@@ -230,25 +243,33 @@
     </ul>
     <ul class="footer-social-list">
       <li class="footer-social-item">
-        <a class="button" href="#">
-          <img class="footer-social-logo" alt="Девайс в Facebook" src="">
+        <a class="button" href="https://www.facebook.com/htmlacademy/">
+          <img class="footer-social-logo" alt="Девайс в Facebook" src="img/footer-logo/facebook.svg" width="9"
+            height="18">
           <span class="visually-hidden">Facebook</span>
         </a>
       </li>
       <li class="footer-social-item">
-        <a class="button" href="#">
-          <img class="footer-social-logo" alt="Девайс в Instagram" src="">
+        <a class="button" href="https://www.instagram.com/htmlacademy">
+          <img class="footer-social-logo" alt="Девайс в Instagram" src="img/footer-logo/instagram.svg" width="16"
+            height="16">
           <span class="visually-hidden">Instagram</span>
         </a>
       </li>
       <li class="footer-social-item">
-        <a class="button" href="#">
-          <img class="footer-social-logo" alt="Девайс в Twitter" src="">
+        <a class="button" href="https://twitter.com/htmlacademy_ru">
+          <img class="footer-social-logo" alt="Девайс в Twitter" src="img/footer-logo/twitter.svg" width="15"
+            height="14">
           <span class="visually-hidden">Twitter</span>
         </a>
       </li>
     </ul>
-    <div class="made-in-text"><a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></div>
+    <div class="made-in-text">
+      <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+        <img class="htmlacademy--logo" src="img/footer-logo/htmlacademy.svg" width="115" height="34">
+        <span class="visually-hidden">Сделано в HTML Academy</span>
+      </a>
+    </div>
   </footer>
 </body>
 
