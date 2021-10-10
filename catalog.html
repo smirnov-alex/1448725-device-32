@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс: Каталог</title>
+  <link rel="stylesheet" href="/styles/styles.css">
 </head>
 
 <body>
@@ -14,16 +15,16 @@
           src="img/header-logo/logo_black.svg">
       </a>
       <ul class="navigation-list navigation-user">
-        <li class="navigation-item"><a class="navigation-link" href="#">
+        <li class="navigation-item"><a class="navigation-user-link" href="#">
             <img class="navigation-logo" src="img/header-logo/search.svg" alt="Поиск по сайту" width="16"
-              height="16">Поиск по сайту</a></li>
-        <li class="navigation-item"><a class="navigation-link" href="#">
-            <img class="navigation-logo" src="img/header-logo/user.svg" alt="Войти" width="13" height="12">Войти</a>
+              height="16"><span class="search-field">Поиск по сайту</span></a></li>
+        <li class="navigation-item"><a class="navigation-user-link" href="#">
+            <img class="navigation-logo" src="img/header-logo/user.svg" alt="Войти" width="13" height="12">Коля Петухов <span class="search-field">Выйти</span></a>
         </li>
-        <li class="navigation-item"><a class="navigation-link" href="#">
+        <li class="navigation-item"><a class="navigation-user-link" href="#">
             <img class="navigation-logo" src="img/header-logo/compare.svg" alt="Войти" width="10"
               height="12">Сравнить</a></li>
-        <li class="navigation-item"><a class="navigation-link" href="#">
+        <li class="navigation-item"><a class="navigation-user-link" href="#">
             <img class="navigation-logo" src="img/header-logo/cart.svg" alt="Войти" width="16" height="14">Корзина</a>
         </li>
       </ul>
@@ -173,6 +174,7 @@
           <li class="product-item">
             <a class="product-item-link" href="#">
               <img class="product-item-image" src="img/catalog/product-4.jpg" width="360" height="380" alt="">
+              <img class="product-item-image-new" src="img/catalog/New.svg" width="60" height="60" alt="">
               <h3 class="product-item-title">Селфи-палка «Следуй за мной»</h3>
             </a>
             <b class="product-item-price">4900 ₽</b>
