@@ -19,7 +19,8 @@
             <img class="navigation-logo" src="img/header-logo/search.svg" alt="Поиск по сайту" width="16"
               height="16"><span class="search-field">Поиск по сайту</span></a></li>
         <li class="navigation-item"><a class="navigation-user-link" href="#">
-            <img class="navigation-logo" src="img/header-logo/user.svg" alt="Войти" width="13" height="12">Коля Петухов <span class="search-field">Выйти</span></a>
+            <img class="navigation-logo" src="img/header-logo/user.svg" alt="Войти" width="13" height="12">Коля Петухов
+            <span class="search-field">Выйти</span></a>
         </li>
         <li class="navigation-item"><a class="navigation-user-link" href="#">
             <img class="navigation-logo" src="img/header-logo/compare.svg" alt="Войти" width="10"
@@ -67,10 +68,10 @@
               <span class="visually-hidden">Изменить максимальную стоимость.</span>
             </button>
             <label class="catalog-filter-label">
-              от <input class="catalog-filter-input" type="number" name="min-price">
+              <span>от 0</span> <input class="catalog-filter-input" type="number" name="min-price">
             </label>
             <label class="catalog-filter-label">
-              до <input class="catalog-filter-input" type="number" name="max-price">
+              <span>до 5000</span> <input class="catalog-filter-input" type="number" name="max-price">
             </label>
           </fieldset>
           <fieldset class="catalog-filter-group">
@@ -108,7 +109,7 @@
                 <label class="control">
                   <input class="visually-hidden control-input" type="radio" name="bluetooth" value="yes" checked>
                   <span class="control-mark"></span>
-                  <span class="control-label">Да</span>
+                  <span class="control-label">Есть</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
@@ -120,7 +121,7 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button" type="submit">Показать</button>
+          <button class="button catalog-products-button" type="submit">Показать</button>
         </form>
       </div>
       <div class="catalog-products-sorting">
@@ -135,18 +136,18 @@
           <button class="sorting-ascending" type="button">
             <span class="visually-hidden">По возрастанию</span>
             <img class="sorting-ascending-image" width="11" height="10" src="img/catalog/sort-up.svg"
-          alt="По возрастанию">
+              alt="По возрастанию">
           </button>
           <button class="sorting-descending" type="button">
             <span class="visually-hidden">По убыванию</span>
             <img class="sorting-descending-image" width="11" height="10" src="img/catalog/sort-down.svg"
-          alt="По e,sdfyb.">
+              alt="По e,sdfyb.">
           </button>
         </form>
       </div>
       <div class="catalog-products-cards">
         <ul class="product-list">
-          <li class="poduct-item">
+          <li class="product-item">
             <a class="product-item-link" href="#">
               <img class="product-item-image" src="img/catalog/product-1.jpg" width="360" height="380" alt="">
               <h3 class="product-item-title">Любительская селфи-палка</h3>
@@ -159,7 +160,7 @@
               <img class="product-item-image" src="img/catalog/product-2.jpg" width="360" height="380" alt="">
               <h3 class="product-item-title">Профессиональная селфи-палка</h3>
             </a>
-            <b class="product-item-price">1500 ₽</b>
+            <b class="product-item-price">1 500 ₽</b>
             <!--класс visually-hidden здесь вероятно не нужен, так как ссылка появится при наведении? -->
             <a href="#" class="product-item-button button visually-hidden">Подробнее</a>
           </li>
@@ -168,7 +169,7 @@
               <img class="product-item-image" src="img/catalog/product-3.jpg" width="360" height="380" alt="">
               <h3 class="product-item-title">Непотопляемая селфи-палка</h3>
             </a>
-            <b class="product-item-price">2500 ₽</b>
+            <b class="product-item-price">2 500 ₽</b>
             <a href="#" class="product-item-button button">Подробнее</a>
           </li>
           <li class="product-item">
@@ -177,7 +178,7 @@
               <img class="product-item-image-new" src="img/catalog/New.svg" width="60" height="60" alt="">
               <h3 class="product-item-title">Селфи-палка «Следуй за мной»</h3>
             </a>
-            <b class="product-item-price">4900 ₽</b>
+            <b class="product-item-price">4 900 ₽</b>
             <a href="#" class="product-item-button button">Подробнее</a>
           </li>
         </ul>
@@ -187,7 +188,7 @@
         <a class="pagination-link pagination-prev pagination-disabled">
           <span class="pagination-button-text">Назад</span>
         </a>
-        <ol class="catalog-pagination">
+        <ul class="catalog-pagination">
           <li class="catalog-pagination-item">
             <a class="catalog-pagination-button catalog-pagination-button-current">
               <span class="pagination-button-text">1</span>
@@ -213,7 +214,7 @@
               <span class="pagination-button-text">15</span>
             </a>
           </li>
-        </ol>
+        </ul>
         <a class="pagination-link pagination-next" href="#">
           <span class="pagination-button-text">Вперед</span>
         </a>

@@ -103,9 +103,7 @@ body {
 
 .slider-about-button{
   font-family: Raleway;
-  font-style: normal;
   font-weight: 800;
-  font-size: 18px;
   line-height: 21px;
   text-align: center;
   letter-spacing: 0.2em;
@@ -285,8 +283,6 @@ body {
 }
 
 .footer-social-logo {
-  width: 40px;
-  height: 40px;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
 }
@@ -295,3 +291,155 @@ body {
   list-style-type: none;
 }
 
+/* Catalog.html */
+.inner-header-title {
+  font-family: Raleway;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+.breadcrumbs-link {
+  line-height: 19px;
+  color: #000000;
+  opacity: 0.6;
+}
+.catalog-products-filter {
+  background: #EBEBEB;
+}
+.catalog-filter-title {
+  background: #DCDCDC;
+  font-family: Raleway;
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-align:center;
+  color: #000000;
+}
+
+.catalog-filter-subtitle {
+  font-weight: bold;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.color-label {
+  font-size: 16px;
+  color: #000000;
+}
+
+.catalog-filter-label span{
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.control-label {
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.catalog-products-button{
+  border: 0px;
+  font-family: Raleway;
+  font-weight: 800;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  background: linear-gradient(to bottom, #EBEBEB 30%,#FFE17F 30%, #FFE17F 70%, #EBEBEB 70%);
+}
+
+.catalog-products-sorting {
+  background: #EBEBEB;
+}
+
+.select-control {
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.product-item {
+  list-style-type: none;
+}
+
+.product-item-link {
+  text-decoration: none;
+  color: #000000;
+}
+.catalog-filter-title {
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+}
+
+.product-item-price {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: right;
+  color: #444444;
+}
+.product-item-button{
+  border: 0px;
+  font-family: Raleway;
+  font-weight: 800;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  background: linear-gradient(to bottom, #FFFFFF 30%,#FFE17F 30%, #FFE17F 70%, #FFFFFF 70%);
+}
+
+.download-more-button {
+  font-family: Raleway;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  border: 3px solid rgba(0, 0, 0, .1);
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.catalog-products-pagination {
+  background-color: #EBEBEB;
+}
+
+.pagination-link {
+  font-family: Raleway;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  align-items: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+.catalog-pagination {
+  list-style-type: none;
+}
+.catalog-pagination-button {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-decoration: none;
+  color: #444444;
+  opacity: 0.3;
+}
