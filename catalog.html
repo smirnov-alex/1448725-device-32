@@ -10,24 +10,24 @@
 <body>
   <header class="page-header">
     <nav class="navigation">
-      <a class="navigation-logo" href="index.html">
+      <a class="navigation-main-logo" href="index.html">
         <img class="page-header-logo" alt="Логотип магазина Девайс»" width="145" height="36"
           src="img/header-logo/logo_black.svg">
       </a>
       <ul class="navigation-list navigation-user">
-        <li class="navigation-item"><a class="navigation-user-link" href="#">
-            <img class="navigation-logo" src="img/header-logo/search.svg" alt="Поиск по сайту" width="16"
-              height="16"><span class="search-field">Поиск по сайту</span></a></li>
-        <li class="navigation-item"><a class="navigation-user-link" href="#">
+        <li class="navigation-item"><a class="navigation-user-link navigation-user-link-search" href="#">
+          <img class="navigation-logo" src="img/header-logo/search.svg" alt="Поиск по сайту" width="16"
+            height="16"><span class="search-field">Поиск по сайту</span></a></li>
+        <li class="navigation-item"><a class="navigation-user-link navigation-user-link-login" href="#">
             <img class="navigation-logo" src="img/header-logo/user.svg" alt="Войти" width="13" height="12">Коля Петухов
             <span class="search-field">Выйти</span></a>
         </li>
-        <li class="navigation-item"><a class="navigation-user-link" href="#">
-            <img class="navigation-logo" src="img/header-logo/compare.svg" alt="Войти" width="10"
-              height="12">Сравнить</a></li>
-        <li class="navigation-item"><a class="navigation-user-link" href="#">
-            <img class="navigation-logo" src="img/header-logo/cart.svg" alt="Войти" width="16" height="14">Корзина</a>
-        </li>
+        <li class="navigation-item"><a class="navigation-user-link navigation-user-link-compare" href="#">
+          <img class="navigation-logo" src="img/header-logo/compare.svg" alt="Войти" width="10"
+            height="12">Сравнить</a></li>
+      <li class="navigation-item"><a class="navigation-user-link navigation-user-link-cart" href="#">
+          <img class="navigation-logo" src="img/header-logo/cart.svg" alt="Войти" width="16" height="14">Корзина</a>
+      </li>
       </ul>
       <ul class="navigation-list">
         <li class="navigation-item"><a class="navigation-link" href="catalog.html">Каталог товаров</a><img
@@ -57,7 +57,7 @@
       </header>
       <section class="catalog-products">
         <div class="catalog-products-filter">
-          <h2 class="visually-hidden" hidden>Список товаров с фильтрами</h2>
+          <h2 class="visually-hidden">Список товаров с фильтрами</h2>
           <h3 class="catalog-filter-title">Фильтр:</h3>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
@@ -134,14 +134,14 @@
                 <option value="cheap">Сначала дешёвое</option>
                 <option value="expensive">Сначала дорогое</option>
               </select>
-              <button class="visually-hidden" type="submit" hidden>Отсортировать продукты</button>
+              <button class="visually-hidden" type="submit">Отсортировать продукты</button>
               <button class="sorting-ascending" type="button">
-                <span class="visually-hidden" hidden>По возрастанию</span>
+                <span class="visually-hidden">По возрастанию</span>
                 <img class="sorting-ascending-image" width="11" height="10" src="img/catalog/sort-up.svg"
                   alt="По возрастанию">
               </button>
               <button class="sorting-descending" type="button">
-                <span class="visually-hidden" hidden>По убыванию</span>
+                <span class="visually-hidden">По убыванию</span>
                 <img class="sorting-descending-image" width="11" height="10" src="img/catalog/sort-down.svg"
                   alt="По убыванию">
               </button>
@@ -177,21 +177,21 @@
                     <b class="product-item-price">2 500 ₽</b>
                   </div>
                 </a>
-                <a href="#" class="product-item-button button">Подробнее</a>
+                <a href="#" class="product-item-button button visually-hidden">Подробнее</a>
               </li>
               <li class="product-item">
                 <a class="product-item-link" href="#">
                   <img class="product-item-image" src="img/catalog/product-4.jpg" width="360" height="380" alt="">
-                  <img class="product-item-image-new" src="img/catalog/New.svg" width="60" height="60" alt="">
+                  <img class="product-item-image-new visually-hidden" src="img/catalog/New.svg" width="60" height="60" alt="">
                   <div class="product-item-description">
                     <h3 class="product-item-title">Селфи-палка «Следуй за мной»</h3>
                     <b class="product-item-price">4 900 ₽</b>
                   </div>
                 </a>
-                <a href="#" class="product-item-button button">Подробнее</a>
+                <a href="#" class="product-item-button button visually-hidden">Подробнее</a>
               </li>
             </ul>
-            <a class="button download-more-button" href="#">Загрузить еще</a>
+            <a class="button download-more-button" href="#"><span>Загрузить еще</span></a>
           </div>
           <div class="catalog-products-pagination">
             <a class="pagination-link pagination-prev pagination-disabled">
@@ -235,13 +235,13 @@
   <footer class="page-footer">
     <div class="page-footer-container">
       <div class="footer-contacts">
-        <h2 class="visually-hidden" hidden>Контакты</h2>
+        <h2 class="visually-hidden">Контакты</h2>
         <a class="navigation-logo" href="index.html">
           <img class="page-footer-logo" alt="Логотип магазина Девайс»" width="145" height="36"
             src="img/footer-logo/logo_yellow.svg">
         </a>
         <address class="footer-contacts-address">
-          <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          <p class="footer-about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </address>
       </div>
       <div class="footer-middle-block">
@@ -284,7 +284,7 @@
         <a class="footer-contacts-address-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">
           <img class="htmlacademy-logo" src="img/footer-logo/htmlacademy.svg" width="115" height="34">
-          <span class="visually-hidden" hidden>Сделано в HTML Academy</span>
+          <span class="visually-hidden">Сделано в HTML Academy</span>
         </a>
       </div>
     </div>

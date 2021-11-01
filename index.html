@@ -10,21 +10,21 @@
 <body>
   <header class="page-header">
     <nav class="navigation">
-      <a class="navigation-logo" href="index.html">
+      <a class="navigation-main-logo" href="index.html">
         <img class="page-header-logo" alt="Логотип магазина Девайс»" width="145" height="36"
           src="img/header-logo/logo_black.svg">
       </a>
       <ul class="navigation-list navigation-user">
-        <li class="navigation-item"><a class="navigation-user-link" href="#">
+        <li class="navigation-item"><a class="navigation-user-link navigation-user-link-search" href="#">
             <img class="navigation-logo" src="img/header-logo/search.svg" alt="Поиск по сайту" width="16"
               height="16"><span class="search-field">Поиск по сайту</span></a></li>
-        <li class="navigation-item"><a class="navigation-user-link" href="#">
+        <li class="navigation-item"><a class="navigation-user-link navigation-user-link-login" href="#">
             <img class="navigation-logo" src="img/header-logo/user.svg" alt="Войти" width="13" height="12">Войти</a>
         </li>
-        <li class="navigation-item"><a class="navigation-user-link" href="#">
+        <li class="navigation-item"><a class="navigation-user-link navigation-user-link-compare" href="#">
             <img class="navigation-logo" src="img/header-logo/compare.svg" alt="Войти" width="10"
               height="12">Сравнить</a></li>
-        <li class="navigation-item"><a class="navigation-user-link" href="#">
+        <li class="navigation-item"><a class="navigation-user-link navigation-user-link-cart" href="#">
             <img class="navigation-logo" src="img/header-logo/cart.svg" alt="Войти" width="16" height="14">Корзина</a>
         </li>
       </ul>
@@ -110,7 +110,6 @@
                 <span class="slider-feature-parameter">Материал</span>
               </li>
             </ul>
-
           </div>
         </div>
 
@@ -143,7 +142,7 @@
         </ol>
       </section>
       <section class="categories">
-        <h2 class="visually-hidden" hidden>Категории товаров</h2>
+        <h2 class="visually-hidden">Категории товаров</h2>
         <a class="categories-item" href="#">
           <img class="categories-item-logo" width="160" height="160" src="img/categories/virtual-reality.png">
           <span class="categories-item-title">Виртуальная реальность</span>
@@ -212,7 +211,7 @@
       <section class="about-company">
         <h2 class="visually-hidden">О компании</h2>
         <div class="delivery">
-          <h3 class="visually-hidden" hidden>Доставка</h3>
+          <h3 class="visually-hidden">Доставка</h3>
           <img class="delivery-logo" width="47" height="31" src="img/delivery-1.svg">
           <span class="delivery-description">Доставим редкий товар под заказ</span>
           <button class="delivery-info">
@@ -232,7 +231,7 @@
               <li class="about-delivery-item"><span>СДИК</span></li>
               <li class="about-delivery-item"><span>ТоксБерри</span></li>
             </ul>
-            <a class="button slider-about-button" href="#">Подробнее о нас</a>
+            <a class="button slider-about-button slider-about-button-more" href="#">Подробнее о нас</a>
           </div>
           <div class="contacts">
             <h3 class="contacts-title">Контакты</h3>
@@ -251,44 +250,48 @@
             <a class="button slider-about-button" href="#">Напишите нам</a>
           </div>
         </div>
-      </section>
-      <section class="newsletter">
-        <div class="newletter-container">
-          <div class="newsletter-left">
-            <h3 class="newsletter-title">Подпишитесь на рассылку</h3>
-            <p class="newsletter-email">
-              <label class="visually-hidden" for="newsletter-email" hidden>Email</label>
-              <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
-                required>
-            </p>
-          </div>
-          <div class="newsletter-right">
-            <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции,
-              спецпредложения и вот это вот всё.</p>
+    </div>
+    </section>
+    <section class="newsletter">
+      <div class="newletter-container">
+        <div class="newsletter-left">
+          <h3 class="newsletter-title">Подпишитесь на рассылку</h3>
+          <p class="newsletter-email">
+            <label class="visually-hidden" for="newsletter-email">Email</label>
+            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+              required>
+          </p>
+        </div>
+        <div class="newsletter-right">
+          <p class="newsletter-text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками,
+            а также акции,
+            спецпредложения и вот это вот всё.</p>
+          <div class="newsletter-button-free">
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
               <button class="button newsletter-button" type="submit">
                 <span>Подписаться</span>
               </button>
             </form>
+            <p class="newsletter-free">
+              <img src="img/tick-big 1.svg" width="14" height="14" alt=""><span>Это бесплатно</span>
+            </p>
           </div>
         </div>
-        <p>
-          <img src="img/tick-big 1.svg" width="14" height="14" alt=""><span>Это бесплатно</span>
-        </p>
-      </section>
-    </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="page-footer">
     <div class="page-footer-container">
       <div class="footer-contacts">
-        <h2 class="visually-hidden" hidden>Контакты</h2>
+        <h2 class="visually-hidden">Контакты</h2>
         <a class="navigation-logo" href="index.html">
           <img class="page-footer-logo" alt="Логотип магазина Девайс»" width="145" height="36"
             src="img/footer-logo/logo_yellow.svg">
         </a>
         <address class="footer-contacts-address">
-          <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          <p class="footer-about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </address>
       </div>
       <div class="footer-middle-block">
@@ -331,7 +334,7 @@
         <a class="footer-contacts-address-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">
           <img class="htmlacademy-logo" src="img/footer-logo/htmlacademy.svg" width="115" height="34">
-          <span class="visually-hidden" hidden>Сделано в HTML Academy</span>
+          <span class="visually-hidden">Сделано в HTML Academy</span>
         </a>
       </div>
     </div>
