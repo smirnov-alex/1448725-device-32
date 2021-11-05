@@ -60,7 +60,7 @@
           <h2 class="visually-hidden">Список товаров с фильтрами</h2>
           <h3 class="catalog-filter-title">Фильтр:</h3>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group catalog-filter-group-price">
               <legend class="catalog-filter-subtitle">Стоимость</legend>
               <button class="range-toggle toggle-min" type="button">
                 <span class="visually-hidden">Изменить минимальную стоимость.</span>
@@ -75,7 +75,7 @@
                 <span>до 5000</span> <input class="catalog-filter-input" type="number" name="max-price">
               </label>
             </fieldset>
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group catalog-filter-group-color">
               <legend class="catalog-filter-subtitle">Цвет</legend>
               <label class="color">
                 <input class="visually-hidden color-input" type="checkbox" name="black">
@@ -103,7 +103,7 @@
                 <span class="color-label">Розовый</span>
               </label>
             </fieldset>
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group catalog-filter-group-price">
               <legend class="catalog-filter-subtitle">Bluetooth</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
@@ -157,7 +157,7 @@
                     <b class="product-item-price">500 ₽</b>
                   </div>
                 </a>
-                <a href="#" class="product-item-button button">Подробнее</a>
+                <a href="#" class="product-item-button button visually-hidden">Подробнее</a>
               </li>
               <li class="product-item">
                 <a class="product-item-link" href="#">
