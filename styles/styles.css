@@ -456,8 +456,9 @@ body {
   background-color: #F0F0F0;
 }
 .newletter-container {
-  display: flex;
-  width: 1160px;
+  display: grid;
+  grid-template-columns: 600px 260px 136px 164px;
+  width:1160px;
   margin: 0 auto;
 }
 
@@ -488,16 +489,18 @@ body {
   margin-top: 86px;
   width: 560px;
   margin-bottom: 50px;
+  grid-column: 2 / -1;
 }
-.newsletter-button-free {
-  display: flex;
-  width: 560px;
-  justify-content: space-between;
-  align-items: center;
+.newsletter-form {
   margin-bottom: 131px;
 }
 .newsletter-free {
   margin: 0;
+  margin-top: 13px;
+  grid-column: 4 / -1;
+}
+.newsletter-free span {
+  padding-left: 21px;
 }
 
 .field {
