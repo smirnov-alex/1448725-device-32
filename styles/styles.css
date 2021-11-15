@@ -826,6 +826,10 @@ body {
   border: 2px solid #AF4FFF;
   box-sizing: border-box;
   border-radius: 25px;
+  margin:0;
+  padding:0;
+  margin-top: 75px;
+  margin-bottom: 63px;
   padding: 3px 15px 5px;
 }
 
@@ -966,14 +970,19 @@ body {
 }
 .breadcrumbs {
   display: flex;
-  justify-content: space-between;
-  width: 465px;
   margin: 0;
   padding: 0;
   margin-bottom: 60px;
   padding-left: 60px;
   list-style-type: none;
+  position: relative;
 }
+
+.breadcrumbs-item {
+  margin-right: 35px;
+  position: relative;
+}
+
 .breadcrumbs-link {
   line-height: 19px;
   color: #000000;
@@ -981,6 +990,33 @@ body {
   margin: 0;
   padding: 0;
 }
+.breadcrumbs-link:hover {
+  opacity: 1;
+}
+
+.breadcrumbs-item:focus {
+  border: 5px solid #AF4FFF;
+  box-sizing: border-box;
+}
+
+.breadcrumbs-item:active {
+  opacity: 0.3;
+}
+
+.breadcrumbs-item::after {
+  position: absolute;
+  top: 12px;
+  right: -17px;
+  width: 4px;
+  height: 7px;
+  background-image: url("/img/nav-arrow\ 1.svg");
+  content: "";
+}
+
+.breadcrumbs-item:last-child::after {
+  content: none;
+}
+
 .catalog-products {
   display:flex;
 }
@@ -1069,6 +1105,14 @@ body {
   padding: 0;
 }
 
+.catalog-products-button:hover {
+  background: #FFC700;
+}
+
+.catalog-products-button:active {
+  color: rgba(255, 255, 255, 0.3)
+}
+
 .catalog-right-block {
   width: 820px;
 }
@@ -1091,9 +1135,16 @@ body {
   margin-left: 72px;
   padding-right: 50px;
 }
+
+.select-control:focus {
+  border: 5px solid #AF4FFF;
+}
+
+
 .sorting-type {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 560px;
 }
 
@@ -1101,13 +1152,33 @@ body {
   margin-left: auto;
   padding: 0;
   border: 0;
+  height: 10px;
   cursor: pointer;
+  background: #EBEBEB;
+  opacity: 0.2;
 }
 .sorting-descending {
   padding: 0;
   margin-left: 20px;
   border: 0;
+  height: 10px;
   cursor: pointer;
+  background: #EBEBEB;
+  opacity: 0.2;
+}
+.sorting-ascending:focus,
+.sorting-descending:focus {
+  border: 5px solid #AF4FFF;
+}
+
+.sorting-ascending:hover,
+.sorting-descending:hover {
+  opacity: 0.5;
+}
+
+.sorting-ascending:active,
+.sorting-descending:active {
+  opacity: 1;
 }
 
 .select-control {
@@ -1135,8 +1206,23 @@ body {
   width: 360px;
   margin-bottom: 44px;
 }
+.product-item:focus {
+  color: #AF4FFF;
+}
+
 .product-item-image {
   margin-bottom: 32px;
+}
+.product-item-image:hover {
+  background: linear-gradient(0deg, rgba(240, 240, 240, 0.8), rgba(240, 240, 240, 0.8)), url(.jpg);
+  opacity: 0.5;
+  z-index:-2;
+}
+
+.product-item-image:focus {
+  border: 5px solid #AF4FFF;
+  box-sizing: border-box;
+  color: #AF4FFF;
 }
 
 .product-item-description {
@@ -1153,12 +1239,12 @@ body {
   letter-spacing: -0.02em;
   color: #000000;
 }
-
+/*
 .product-item-link {
   text-decoration: none;
   color: #000000;
 }
-
+*/
 .product-item-price {
   line-height: 21px;
   text-align: right;
@@ -1174,9 +1260,15 @@ body {
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  background: linear-gradient(to bottom, #FFFFFF 30%,#FFE17F 30%, #FFE17F 70%, #FFFFFF 70%);
+  background: linear-gradient(to bottom, #FFFFFF 30%,#FFC700 30%, #FFC700 70%, #FFFFFF 70%);
   display: block;
   width: 180px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.product-item-button:hover {
+  background-color: #FFC700;
 }
 
 .download-more-button {
@@ -1200,6 +1292,22 @@ body {
   margin: auto;
 }
 
+.download-more-button:hover {
+  border: 3px solid #000000;
+  box-sizing: border-box;
+}
+
+.download-more-button:focus {
+  border: 5px solid #AF4FFF;
+  box-sizing: border-box;
+}
+
+.download-more-button:active {
+  border: 3px solid rgba(0, 0, 0, .1);
+  box-sizing: border-box;
+  color:rgba(0, 0, 0, 0.3)
+}
+
 .catalog-products-pagination {
   background-color: #EBEBEB;
   margin-bottom: 77px;
@@ -1216,6 +1324,20 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+}
+
+.pagination-link:hover {
+  background: #DCDCDC;
+}
+
+.pagination-link:focus {
+  border: 5px solid #AF4FFF;
+  box-sizing: border-box;
+}
+
+.pagination-link:active {
+  background: #DCDCDC;
+  opacity: 0.3;
 }
 
 .catalog-products-pagination {
@@ -1249,4 +1371,19 @@ body {
   text-decoration: none;
   color: #444444;
   opacity: 0.3;
+}
+
+.catalog-pagination-button:focus {
+  border: 5px solid #AF4FFF;
+  box-sizing: border-box;
+}
+
+.catalog-pagination-button:hover {
+  color: #444444;
+  opacity: 1;
+}
+
+.catalog-pagination-button:active {
+  color: #444444;
+  opacity: 0.1;
 }
