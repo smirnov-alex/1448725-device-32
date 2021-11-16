@@ -16,18 +16,18 @@
       </a>
       <ul class="navigation-list navigation-user">
         <li class="navigation-item"><a class="navigation-user-link navigation-user-link-search" href="#">
-          <img class="navigation-logo" src="img/header-logo/search.svg" alt="Поиск по сайту" width="16"
-            height="16"><span class="search-field">Поиск по сайту</span></a></li>
+            <img class="navigation-logo" src="img/header-logo/search.svg" alt="Поиск по сайту" width="16"
+              height="16"><span class="search-field">Поиск по сайту</span></a></li>
         <li class="navigation-item"><a class="navigation-user-link navigation-user-link-login" href="#">
             <img class="navigation-logo" src="img/header-logo/user.svg" alt="Войти" width="13" height="12">Коля Петухов
             <span class="search-field">Выйти</span></a>
         </li>
         <li class="navigation-item"><a class="navigation-user-link navigation-user-link-compare" href="#">
-          <img class="navigation-logo" src="img/header-logo/compare.svg" alt="Войти" width="10"
-            height="12">Сравнить</a></li>
-      <li class="navigation-item"><a class="navigation-user-link navigation-user-link-cart" href="#">
-          <img class="navigation-logo" src="img/header-logo/cart.svg" alt="Войти" width="16" height="14">Корзина</a>
-      </li>
+            <img class="navigation-logo" src="img/header-logo/compare.svg" alt="Войти" width="10"
+              height="12">Сравнить</a></li>
+        <li class="navigation-item"><a class="navigation-user-link navigation-user-link-cart" href="#">
+            <img class="navigation-logo" src="img/header-logo/cart.svg" alt="Войти" width="16" height="14">Корзина</a>
+        </li>
       </ul>
       <ul class="navigation-list">
         <li class="navigation-item"><a class="navigation-link" href="catalog.html">Каталог товаров</a><img
@@ -62,46 +62,68 @@
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group catalog-filter-group-price">
               <legend class="catalog-filter-subtitle">Стоимость</legend>
-              <button class="range-toggle toggle-min" type="button">
-                <span class="visually-hidden">Изменить минимальную стоимость.</span>
-              </button>
-              <button class="range-toggle toggle-max" type="button">
-                <span class="visually-hidden">Изменить максимальную стоимость.</span>
-              </button>
-              <label class="catalog-filter-label">
-                <span>от 0</span> <input class="catalog-filter-input" type="number" name="min-price">
-              </label>
-              <label class="catalog-filter-label">
-                <span>до 5000</span> <input class="catalog-filter-input" type="number" name="max-price">
-              </label>
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 0px; width: 119px">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="range-wrapper-inputs">
+                  <label class="catalog-filter-label">
+                    от <input class="range-input" type="number" value="0" name="min-price">
+                  </label>
+                  <label class="catalog-filter-label">
+                    до <input class="range-input" type="number" value="5000" name="max-price" style="width: 66px">
+                  </label>
+                </div>
+              </div>
+
             </fieldset>
             <fieldset class="catalog-filter-group catalog-filter-group-color">
               <legend class="catalog-filter-subtitle">Цвет</legend>
-              <label class="color">
-                <input class="visually-hidden color-input" type="checkbox" name="black">
-                <span class="color-mark"></span>
-                <span class="color-label">Черный</span>
-              </label>
-              <label class="color">
-                <input class="visually-hidden color-input" type="checkbox" name="white">
-                <span class="color-mark"></span>
-                <span class="color-label">Белый</span>
-              </label>
-              <label class="color">
-                <input class="visually-hidden color-input" type="checkbox" name="blue">
-                <span class="color-mark"></span>
-                <span class="color-label">Синий</span>
-              </label>
-              <label class="color">
-                <input class="visually-hidden color-input" type="checkbox" name="red">
-                <span class="color-mark"></span>
-                <span class="color-label">Красный</span>
-              </label>
-              <label class="color">
-                <input class="visually-hidden color-input" type="checkbox" name="pink">
-                <span class="color-mark"></span>
-                <span class="color-label">Розовый</span>
-              </label>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="black" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Черный</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="white" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Белый</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="blue">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Синий</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="red">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Красный</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="pink">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Розовый</span>
+                  </label>
+                </li>
+              </ul>
             </fieldset>
             <fieldset class="catalog-filter-group catalog-filter-group-price">
               <legend class="catalog-filter-subtitle">Bluetooth</legend>
@@ -183,7 +205,8 @@
               <li class="product-item">
                 <a class="product-item-link" href="#">
                   <img class="product-item-image" src="img/catalog/product-4.jpg" width="360" height="380" alt="">
-                  <img class="product-item-image-new visually-hidden" src="img/catalog/New.svg" width="60" height="60" alt="">
+                  <img class="product-item-image-new visually-hidden" src="img/catalog/New.svg" width="60" height="60"
+                    alt="">
                   <div class="product-item-description">
                     <h3 class="product-item-title">Селфи-палка «Следуй за мной»</h3>
                     <b class="product-item-price">4 900 ₽</b>
