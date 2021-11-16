@@ -334,6 +334,45 @@ body {
   opacity: 0.3;
 }
 
+.slider-pagination {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  grid-row-start: 8;
+  grid-column-start: 7;
+  grid-row-end: 9;
+  grid-column-end: 8;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slider-pagination-button {
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  width: 12px;
+  height: 12px;
+}
+
+.slider-pagination-button:hover {
+  opacity: 0.6;
+}
+
+.slider-pagination-button:focus {
+  border: 2px solid #AF4FFF;
+  box-sizing: border-box;
+}
+
+.slider-pagination-button-current {
+  background: #000000;
+}
+
 .slider-list {
   display:flex;
   margin: 0;
