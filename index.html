@@ -311,14 +311,24 @@
       </section>
       <section class="about-company">
         <h2 class="visually-hidden">О компании</h2>
-        <div class="delivery">
-          <h3 class="visually-hidden">Доставка</h3>
-          <img class="delivery-logo" width="47" height="31" src="img/delivery-1.svg">
-          <span class="delivery-description">Доставим редкий товар под заказ</span>
-          <button class="delivery-info">
-            <img class="delivery-info-image" width="40" height="40" src="img/info-1.svg">
-          </button>
-        </div>
+        <a class="delivery-button" href="#">
+          <div class="delivery">
+            <h3 class="visually-hidden">Доставка</h3>
+            <img class="delivery-logo" width="47" height="31" aria-hidden="true" focusable="false"
+              src="img/delivery-1.svg">
+            <span class="delivery-description">Доставим редкий товар под заказ</span>
+            <button class="delivery-info">
+              <svg class="delivery-info-icon" width="2" height="12" viewBox="0 0 2 12" aria-hidden="true"
+                focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.3">
+                  <path d="M2 0H0V2H2V0Z" />
+                  <path d="M2 4H0V12H2V4Z" />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </a>
+
         <div class="about-company-sub">
           <div class="about">
             <h3 class="about-title">О нас</h3>
@@ -475,6 +485,44 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal-container modal-container-close">
+    <div class="modal modal-delivery">
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Доставка под заказ</h2>
+        <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="field-group field-group-name">
+            <label class="delivery-form-label" for="name">Ваше имя:</label>
+            <input class="delivery-form-field-name delivery-form-field" type="text" id="name" name="name"
+              placeholder="Имя Фамилия">
+          </p>
+          <p class="field-group field-group-email">
+            <label class="delivery-form-label" for="email">Ваш e-mail:</label>
+            <input class="delivery-form-field-email delivery-form-field" type="email" id="email" name="email"
+              placeholder="krasotka92@mail.ru" required>
+          </p>
+          <p class="field-group field-group-item">
+            <label class="delivery-form-label" for="item">Что нужно привезти:</label>
+            <input class="delivery-form-field" type="text" id="item" name="item" placeholder="В свободной форме"
+              required>
+          </p>
+          <p class="field-group field-group-amount">
+            <label class="delivery-form-label-amount delivery-form-label" for="amount">Количество:</label>
+            <input class="delivery-form-field-amount delivery-form-field" type="number" id="amount" name="number"
+              placeholder="1">
+          </p>
+          <div class="popover-modal">
+            <p>Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+              к провозу багажа.</p>
+          </div>
+          <button class="modal-button">Отправить</button>
+        </form>
+      </section>
+    </div>
+  </div>
 </body>
 
 </html>

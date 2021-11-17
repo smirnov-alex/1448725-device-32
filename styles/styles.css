@@ -568,6 +568,27 @@ body {
 }
 
 /* About company */
+.delivery-button {
+  text-decoration: none;
+}
+
+.delivery-button:hover div {
+  background: #EBEBEB;
+}
+.delivery-button:hover img {
+  background-color: #FFC700;
+}
+
+.delivery-button:focus div {
+  border: 5px solid #AF4FFF;
+  box-sizing: border-box;
+}
+
+ .delivery-button:active span,
+ .delivery-button:active img{
+  opacity: 0.3;
+}
+
 .delivery {
   background-color: #F0F0F0;
   display: flex;
@@ -575,6 +596,8 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: 146px;
+  box-sizing: border-box;
+  border: 5px solid transparent;
 }
 
 .delivery:focus {
@@ -585,10 +608,6 @@ body {
   background-color: #FFE17F;
   width: 125px;
   height: 100px;
-}
-
-.delivery-logo:hover {
-  background-color: #FFC700;
 }
 
 .delivery-description {
@@ -610,11 +629,34 @@ body {
 }
 
 .delivery-info {
-  margin-left: auto;
+  margin: auto;
   margin-right: 33px;
+  height: 40px;
+  width: 40px;
   padding: 0;
   border: 0;
   cursor: pointer;
+  border-radius: 50%;
+  background-color: rgba(220, 220, 220, 0.5);
+  position: relative;
+}
+
+.delivery-info-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: rgba(0, 0, 0, .3)
+}
+
+.delivery-info:hover {
+  background-color: #DCDCDC;
+}
+
+.delivery-info:hover svg{
+  fill: rgba(0, 0, 0, 1)
 }
 
 .about-company-sub {
@@ -1059,6 +1101,227 @@ body {
 .htmlacademy-icon:active {
   fill:  #FFFFFF;
   opacity: 0.3;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(240, 240, 240, 0.9);
+  z-index: 5;
+}
+
+.modal-container-close {
+  display: none;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 72px 80px 88px;
+  background: #FFFFFF;
+  border: 10px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.modal-delivery {
+  width: 920px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 89px;
+  right: 80px;
+  width: 26px;
+  height: 26px;
+  background-color: #ffffff;
+  border: none;
+  background-image: url("/img/modal/close-modal.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-title {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 58px;
+}
+
+.delivery-form {
+  display: grid;
+  grid-template-columns: 360px 160px 160px;
+  gap: 40px;
+  position: relative;
+}
+
+.field-group-name {
+  grid-column: 1 / 2;
+}
+
+.field-group-email {
+  grid-column: 2 / 4;
+}
+
+.field-group-item {
+  grid-column: 1 / 3;
+}
+
+.field-group-amount {
+  grid-column: 3 / 4;
+}
+
+.field-group {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.modal-button{
+  border: 2px solid transparent;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  background: linear-gradient(to bottom, #FFFFFF 30%,#FFC700 30%, #FFC700 70%, #FFFFFF 70%);
+  display: block;
+  width: 200px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.modal-button:hover {
+  background: #FFC700;
+}
+
+.modal-button:focus {
+  border-color: #AF4FFF;
+}
+
+.modal-button:active {
+  color: rgba(255, 255, 255, 0.3)
+}
+
+.delivery-form-label {
+  font-weight: bold;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  margin-bottom: 18px;
+  padding-right: 31px;
+  position: relative;
+}
+
+.delivery-form-label-amount::after {
+  position: absolute;
+  top: -2px;
+  left: 130px;
+  width: 26px;
+  height: 26px;
+  background-color: #FFE17F;
+  background-image: url("/img/modal/info-2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  content: "";
+}
+
+.delivery-form-field {
+  width: 100%;
+  border: 5px solid transparent;
+  padding-left: 20px;
+  padding-right: 50px;
+  position: relative;
+  height: 55px;
+  box-sizing: border-box;
+  background: #F0F0F0;
+  font: inherit;
+}
+
+.delivery-form-field:hover {
+  background-color: #EBEBEB;
+}
+
+.delivery-form-field:focus {
+  border-color: #AF4FFF;
+  color: #000000;
+}
+
+.delivery-form-field:active {
+  border-color: #000000;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.delivery-form-field:invalid {
+  border-color: #000000;
+  background: #FFFFFF;
+}
+
+.delivery-form-field-name {
+  background-image: url("/img/modal/user.svg");
+  background-repeat: no-repeat;
+  background-position: 323px center;
+}
+
+.delivery-form-field-email {
+  background-image: url("/img/modal/mail.svg");
+  background-repeat: no-repeat;
+  background-position: 323px center;
+}
+
+.delivery-form-field-amount {
+  padding-left: 50px;
+  text-align: center;
+}
+
+.popover-modal {
+  position: absolute;
+  top: 163px;
+  right: -96px;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 200px;
+  padding: 19px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background-color: #000000;
+  min-height: 160px;
+  box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.popover-modal-show {
+  display: block;
+}
+
+.popover-modal p {
+  margin: 0;
+}
+
+.popover-modal::before {
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  width: 14px;
+  height: 6px;
+  background-color: transparent;
+  background-image: url("/img/popover/triangle.svg");
+  background-repeat: no-repeat;
+  content: '';
 }
 
 /* Catalog.html */
