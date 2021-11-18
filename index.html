@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="/img/favicon.ico"><!-- 32×32 -->
 </head>
 
 <body>
@@ -32,14 +33,16 @@
               <ul class="cart-items-list">
                 <li class="cart-item">
                   <a class="cart-item-link" href="#">
-                    <img class="cart-item-image" src="img/popover/product-1-small.png" width=41px height=43px>
+                    <img class="cart-item-image" src="img/popover/product-1-small.png" width="41" height="43"
+                      alt="Любительская селфи-палка">
                     <p class="cart-item-title">Любительская селфи-палка</p>
                   </a>
                   <button class="cart-item-delete"></button>
                 </li>
                 <li class="cart-item">
                   <a class="cart-item-link" href="#">
-                    <img class="cart-item-image" src="img/popover/product-2-small.png" width=41px height=43px>
+                    <img class="cart-item-image" src="img/popover/product-2-small.png" width="41" height="43"
+                      alt="Профессиональная селфи-палка">
                     <p class="cart-item-title">Профессиональная селфи-палка</p>
                   </a>
                   <button class="cart-item-delete"></button>
@@ -57,7 +60,7 @@
         </li>
       </ul>
       <ul class="navigation-list">
-        <li class="navigation-item"><a class="navigation-link" href="catalog.html">Каталог товаров</a>
+        <li class="navigation-item"><a class="navigation-link navigation-link-catalog" href="catalog.html">Каталог товаров</a>
           <img class="navigation-plus" src="img/header-logo/plus_1.svg" alt="Плюс" width="16" height="16">
         </li>
         <li class="navigation-item"><a class="navigation-link" href="#">Доставка</a></li>
@@ -227,27 +230,33 @@
       <section class="categories">
         <h2 class="visually-hidden">Категории товаров</h2>
         <a class="categories-item" href="#">
-          <img class="categories-item-logo" width="160" height="160" src="img/categories/virtual-reality.png">
+          <img class="categories-item-logo" width="160" height="160" src="img/categories/virtual-reality.png"
+            alt="Виртуальная реальность">
           <span class="categories-item-title">Виртуальная реальность</span>
         </a>
         <a class="categories-item" href="#">
-          <img class="categories-item-logo" width="160" height="160" src="img/categories/monopods-for-selfie.png">
+          <img class="categories-item-logo" width="160" height="160" src="img/categories/monopods-for-selfie.png"
+            alt="Моноподы для селфи">
           <span class="categories-item-title">Моноподы для селфи</span>
         </a>
         <a class="categories-item" href="#">
-          <img class="categories-item-logo" width="160" height="160" src="img/categories/action-cams.png">
+          <img class="categories-item-logo" width="160" height="160" src="img/categories/action-cams.png"
+            alt="Экшн-камеры">
           <span class="categories-item-title">Экшн-камеры</span>
         </a>
         <a class="categories-item" href="#">
-          <img class="categories-item-logo" width="160" height="160" src="img/categories/fitness-tracker.png">
+          <img class="categories-item-logo" width="160" height="160" src="img/categories/fitness-tracker.png"
+            alt="Фитнес-браслеты">
           <span class="categories-item-title">Фитнес-браслеты</span>
         </a>
         <a class="categories-item" href="#">
-          <img class="categories-item-logo" width="160" height="160" src="img/categories/smart-watches.png">
+          <img class="categories-item-logo" width="160" height="160" src="img/categories/smart-watches.png"
+            alt="Умные часы">
           <span class="categories-item-title">Умные часы</span>
         </a>
         <a class="categories-item" href="#">
-          <img class="categories-item-logo" width="160" height="160" src="img/categories/quadcopter.png">
+          <img class="categories-item-logo" width="160" height="160" src="img/categories/quadcopter.png"
+            alt="Квадрокоптеры">
           <span class="categories-item-title">Квадрокоптеры</span>
         </a>
       </section>
@@ -269,7 +278,8 @@
                 бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </div>
             <div>
-              <img class="services-item-image" width="260" height="240" src="img/services/illustration-delivery 1.png">
+              <img class="services-item-image" width="260" height="240" src="img/services/illustration-delivery.png"
+                alt="Доставка">
             </div>
           </li>
           <li class="services-item visually-hidden">
@@ -286,7 +296,8 @@
                 переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
             </div>
             <div>
-              <img class="services-item-image" width="260" height="240" src="img/services/illustration-warranty 1.png">
+              <img class="services-item-image" width="260" height="240" src="img/services/illustration-warranty.png"
+                alt="Гарантия">
             </div>
           </li>
           <li class="services-item visually-hidden">
@@ -300,11 +311,11 @@
             <div class="services-description">
               <h3 class="services-item-title">Кредит</h3>
               <p class="services-item-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут
-                для
-                вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+                для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
             </div>
             <div>
-              <img class="services-item-image" width="260" height="240" src="img/services/illustration-credit 1.png">
+              <img class="services-item-image" width="260" height="240" src="img/services/illustration-credit.png"
+                alt="Кредит">
             </div>
           </li>
         </ul>
@@ -314,8 +325,7 @@
         <a class="delivery-button" href="#">
           <div class="delivery">
             <h3 class="visually-hidden">Доставка</h3>
-            <img class="delivery-logo" width="47" height="31" aria-hidden="true" focusable="false"
-              src="img/delivery-1.svg">
+            <img class="delivery-logo" width="47" height="31" src="img/delivery-1.svg" alt="Логотип доставки Девайс">
             <span class="delivery-description">Доставим редкий товар под заказ</span>
             <button class="delivery-info">
               <svg class="delivery-info-icon" width="2" height="12" viewBox="0 0 2 12" aria-hidden="true"
@@ -328,7 +338,6 @@
             </button>
           </div>
         </a>
-
         <div class="about-company-sub">
           <div class="about">
             <h3 class="about-title">О нас</h3>
@@ -361,30 +370,29 @@
             <a class="button slider-about-button" href="#">Напишите нам</a>
           </div>
         </div>
-    </div>
-    </section>
-    <section class="newsletter">
-      <div class="newletter-container">
-        <h3 class="newsletter-title">Подпишитесь на рассылку</h3>
-        <p class="newsletter-text">Еженедельный дайджест с обзорами новинок,
-          длительными тест-драйвами, распаковками, а также акции,
-          спецпредложения и вот это вот всё.</p>
-        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="newsletter-email">
-            <label class="visually-hidden" for="newsletter-email">Email</label>
-            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
-              required>
+      </section>
+      <section class="newsletter">
+        <div class="newletter-container">
+          <h3 class="newsletter-title">Подпишитесь на рассылку</h3>
+          <p class="newsletter-text">Еженедельный дайджест с обзорами новинок,
+            длительными тест-драйвами, распаковками, а также акции,
+            спецпредложения и вот это вот всё.</p>
+          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="newsletter-email">
+              <label class="visually-hidden" for="newsletter-email">Email</label>
+              <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+                required>
+            </p>
+            <button class="button newsletter-button" type="submit">
+              <span>Подписаться</span>
+            </button>
+          </form>
+          <p class="newsletter-free">
+            <img src="img/tick-big-1.svg" width="14" height="14" alt=""><span>Это бесплатно</span>
           </p>
-          <button class="button newsletter-button" type="submit">
-            <span>Подписаться</span>
-          </button>
-        </form>
-        <p class="newsletter-free">
-          <img src="img/tick-big 1.svg" width="14" height="14" alt=""><span>Это бесплатно</span>
-        </p>
-      </div>
-    </section>
-
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer class="page-footer">

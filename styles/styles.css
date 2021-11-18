@@ -45,6 +45,7 @@ body {
   background-color: #FFFFFF;
   color: #444444;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -111,27 +112,14 @@ body {
   margin-right: 24px;
 }
 
-.navigation-user-link-login {
-  display: block;
-  width: 245px;
-  margin-right: 15px;
+.navigation-logo {
+  margin-right: 12px;
 }
-
-.navigation-user-link-compare {
-  display: block;
-  width: 120px;
-}
-
-.navigation-user-link-cart {
-  display: block;
-  width: 141px;
-  margin-left: auto;
-}
-
 
 .navigation-item {
   list-style-type: none;
   position: relative;
+  display: flex;
 }
 
 .navigation-link {
@@ -166,6 +154,10 @@ body {
   border-radius: 25px;
 }
 
+.navigation-link-catalog {
+  padding-right: 90px;
+}
+
 .navigation-user-link {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
@@ -176,6 +168,7 @@ body {
   box-sizing: border-box;
   border-radius: 20px;
   padding: 10px 16px 10px;
+  display: block;
 }
 
 .navigation-user-link:hover {
@@ -190,13 +183,14 @@ body {
   opacity: 0.3;
 }
 
-
 .navigation-plus {
   background: #FFE17F;
   opacity: 0.2;
   border: 2px solid #000000;
   box-sizing: border-box;
   border-radius: 50%;
+  width: 50px;
+  height: 50px;
 }
 
 .search-field {
@@ -207,6 +201,7 @@ body {
   width: 1160px;
   margin: 0 auto;
 }
+
 /* Slider */
 .slider {
   margin-bottom: 70px;
@@ -388,7 +383,6 @@ body {
   grid-column-start: 5;
   grid-row-end: 11;
   grid-column-end: -1;
-
 }
 
 .slider-feature {
@@ -412,19 +406,17 @@ body {
   font-size: 16px;
 }
 
-
-
 /* Categories */
 .categories {
   display: flex;
   justify-content: space-between;
   margin-bottom: 69px;
 }
+
 .categories-item {
   text-decoration: none;
   width: 160px;
 }
-
 
 .categories-item-title {
   font-family: "Raleway", sans-serif;
@@ -437,15 +429,17 @@ body {
 .categories-item-logo {
   background: #FFE17F;
   margin-bottom: 33px;
+  border: 5px solid transparent;
+  box-sizing: border-box;
 }
 
 .categories-item:hover img{
   background-color: #ffc700;
+  /* border: 5px solid transparent; */
 }
 
 .categories-item:focus img{
-  border: 5px solid #AF4FFF;
-  box-sizing: border-box;
+  border-color: #AF4FFF;
 }
 .categories-item:focus span{
   color: #AF4FFF;
@@ -454,7 +448,6 @@ body {
 .categories-item:active {
   opacity: 0.3;
 }
-
 
 /* Services */
 .services {
@@ -496,7 +489,6 @@ body {
   left: 280px;
 }
 
-
 .services-item-title {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -505,6 +497,7 @@ body {
   width: 560px;
   margin-bottom: 14px;
 }
+
 .services-description {
   width: 500px;
 }
@@ -625,7 +618,6 @@ body {
   color: #000000;
   width: 910px;
   margin: auto;
-
 }
 
 .delivery-info {
@@ -670,6 +662,7 @@ body {
   margin-right: 40px;
   padding: 0;
 }
+
 .contacts{
   width: 560px;
   padding: 0;
@@ -726,7 +719,6 @@ body {
   font-size: 18px;
   line-height: 20px;
   color: #000000;
-
 }
 
 .slider-about-button-more {
@@ -758,6 +750,7 @@ body {
   margin: 0;
   margin-bottom: 30px;
 }
+
 .contacts-subtitle {
   font-weight: 700;
   font-size: 24px;
@@ -789,6 +782,7 @@ body {
 .newsletter {
   background-color: #F0F0F0;
 }
+
 .newletter-container {
   display: grid;
   grid-template-columns: 600px 260px 136px 164px;
@@ -813,12 +807,12 @@ body {
   margin-top: 75px;
   margin-bottom: 53px;
 }
+
 .newsletter-email {
   margin: 0;
   height: 55px;
   flex-grow: 1;
 }
-
 
 .field {
   width: 600px;
@@ -900,8 +894,6 @@ body {
 .newsletter-free span {
   padding-left: 21px;
 }
-
-
 
 /*footer*/
 .page-footer {
@@ -1378,7 +1370,7 @@ body {
   right: -17px;
   width: 4px;
   height: 7px;
-  background-image: url("/img/nav-arrow\ 1.svg");
+  background-image: url("/img/nav-arrow.svg");
   content: "";
 }
 
