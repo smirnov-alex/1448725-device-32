@@ -31,8 +31,16 @@
         </li>
       </ul>
       <ul class="navigation-list">
-        <li class="navigation-item"><a class="navigation-link" href="catalog.html">Каталог товаров</a><img
-            class="navigation-plus" src="img/header-logo/plus_1.svg" alt="Плюс" width="16" height="16"> </li>
+        <li class="navigation-item"><a class="navigation-link" href="catalog.html">Каталог товаров</a><button
+            class="popover-open-button">
+            <svg class="navigation-plus" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"
+              xmlns="http://www.w3.org/2000/svg">
+              <g>
+                <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black" />
+              </g>
+            </svg>
+          </button>
+        </li>
         <li class="navigation-item"><a class="navigation-link" href="#">Доставка</a></li>
         <li class="navigation-item"><a class="navigation-link" href="#">Гарантия</a></li>
         <li class="navigation-item"><a class="navigation-link" href="#">Контакты</a></li>
@@ -66,10 +74,10 @@
               <div class="range">
                 <div class="range-scale">
                   <div class="range-bar" style="left: 0px; width: 119px">
-                    <button class="range-toggle toggle-min">
+                    <button class="range-toggle toggle-min" type="button">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
-                    <button class="range-toggle toggle-max">
+                    <button class="range-toggle toggle-max type="button">
                       <span class="visually-hidden">Изменить максимальную цену.</span>
                     </button>
                   </div>
@@ -221,8 +229,7 @@
                 <a class="product-item-link" href="#">
                   <div class="product-wrapper">
                     <img class="product-item-image" src="img/catalog/product-4.jpg" width="360" height="380" alt="">
-                    <img class="product-item-image-new" src="img/catalog/New.svg" width="60" height="60"
-                      alt="">
+                    <img class="product-item-image-new" src="img/catalog/New.svg" width="60" height="60" alt="">
                     <button class="product-item-button">Подробнее</button>
                   </div>
                   <div class="product-item-description">
