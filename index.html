@@ -60,8 +60,49 @@
         </li>
       </ul>
       <ul class="navigation-list">
-        <li class="navigation-item"><a class="navigation-link navigation-link-catalog" href="catalog.html">Каталог товаров</a>
-          <img class="navigation-plus" src="img/header-logo/plus_1.svg" alt="Плюс" width="16" height="16">
+        <li class="navigation-item"><a class="navigation-link navigation-link-catalog" href="catalog.html">Каталог
+            товаров</a>
+          <button class="popover-open-button">
+            <svg class="navigation-plus" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"
+              xmlns="http://www.w3.org/2000/svg">
+              <g opacity="0.3">
+                <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black" />
+              </g>
+            </svg>
+          </button>
+          <div class="popover-catalog">
+            <button class="popover-close-button popover-open-button">
+              <svg class="popover-close-minus" width="16" height="16" viewBox="0 0 16 16"
+                xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <path d="M16 7H0V9H16V7Z" />
+              </svg>
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+            <div class="popover-catalog-content">
+              <h3 class="popover-title visually-hidden">Подменю каталога</h3>
+              <ul class="popover-submenu">
+                <li class="popover-submenu-item">
+                  <a class="popover-submenu-link" href="#">Виртуальная реальность</a>
+                </li>
+                <li class="popover-submenu-item">
+                  <a class="popover-submenu-link" href="#">Моноподы для селфи</a>
+                </li>
+                <li class="popover-submenu-item">
+                  <a class="popover-submenu-link" href="#">Экшн-камеры</a>
+                </li>
+                <li class="popover-submenu-item">
+                  <a class="popover-submenu-link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="popover-submenu-item">
+                  <a class="popover-submenu-link" href="#">Умные часы</a>
+                </li>
+                <li class="popover-submenu-item">
+                  <a class="popover-submenu-link" href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+
+            </div>
+          </div>
         </li>
         <li class="navigation-item"><a class="navigation-link" href="#">Доставка</a></li>
         <li class="navigation-item"><a class="navigation-link" href="#">Гарантия</a></li>
@@ -371,28 +412,28 @@
           </div>
         </div>
       </section>
-      <section class="newsletter">
-        <div class="newletter-container">
-          <h3 class="newsletter-title">Подпишитесь на рассылку</h3>
-          <p class="newsletter-text">Еженедельный дайджест с обзорами новинок,
-            длительными тест-драйвами, распаковками, а также акции,
-            спецпредложения и вот это вот всё.</p>
-          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="newsletter-email">
-              <label class="visually-hidden" for="newsletter-email">Email</label>
-              <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
-                required>
-            </p>
-            <button class="button newsletter-button" type="submit">
-              <span>Подписаться</span>
-            </button>
-          </form>
-          <p class="newsletter-free">
-            <img src="img/tick-big-1.svg" width="14" height="14" alt=""><span>Это бесплатно</span>
-          </p>
-        </div>
-      </section>
     </div>
+    <section class="newsletter">
+      <div class="newletter-container">
+        <h3 class="newsletter-title">Подпишитесь на рассылку</h3>
+        <p class="newsletter-text">Еженедельный дайджест с обзорами новинок,
+          длительными тест-драйвами, распаковками, а также акции,
+          спецпредложения и вот это вот всё.</p>
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="newsletter-email">
+            <label class="visually-hidden" for="newsletter-email">Email</label>
+            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+              required>
+          </p>
+          <button class="button newsletter-button" type="submit">
+            <span>Подписаться</span>
+          </button>
+        </form>
+        <p class="newsletter-free">
+          <img src="img/tick-big-1.svg" width="14" height="14" alt=""><span>Это бесплатно</span>
+        </p>
+      </div>
+    </section>
   </main>
 
   <footer class="page-footer">
