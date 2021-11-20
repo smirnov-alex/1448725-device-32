@@ -116,7 +116,10 @@ body {
   display: block;
   width: 516px;
   margin-right: 24px;
+}
 
+.logout {
+  opacity: 0.3;
 }
 
 .search-field {
@@ -1363,7 +1366,7 @@ border-color: transparent;
   display: none;
 }
 
-.popover-modal-show {
+.popover-modal-open {
   display: block;
 }
 

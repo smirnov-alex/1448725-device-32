@@ -16,23 +16,61 @@
           src="img/header-logo/logo_black.svg">
       </a>
       <ul class="navigation-list navigation-user">
-        <li class="navigation-item"><a class="navigation-user-link navigation-user-link-search" href="#">
-            <img class="navigation-logo" src="img/header-logo/search.svg" alt="Поиск по сайту" width="16"
-              height="16"><span class="search-field">Поиск по сайту</span></a></li>
+        <li class="navigation-item">
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="search-field">Поиск по сайту</label>
+            <input class="search-field" placeholder="Поиск по сайту" type="email" name="newsletter-email"
+              id="search-field" required>
+            <!-- <button class="search-button" type="submit">
+            <span>Найти</span>
+          </button> -->
+          </form>
+        </li>
         <li class="navigation-item"><a class="navigation-user-link navigation-user-link-login" href="#">
             <img class="navigation-logo" src="img/header-logo/user.svg" alt="Войти" width="13" height="12">Коля Петухов
-            <span class="search-field">Выйти</span></a>
+            <span class="logout">Выйти</span></a>
         </li>
-        <li class="navigation-item"><a class="navigation-user-link navigation-user-link-compare" href="#">
-            <img class="navigation-logo" src="img/header-logo/compare.svg" alt="Войти" width="10"
+        <li class="navigation-item"><a class="navigation-user-link" href="#">
+            <img class="navigation-logo" src="img/header-logo/compare.svg" alt="Сравнить" width="10"
               height="12">Сравнить</a></li>
-        <li class="navigation-item"><a class="navigation-user-link navigation-user-link-cart" href="#">
-            <img class="navigation-logo" src="img/header-logo/cart.svg" alt="Войти" width="16" height="14">Корзина</a>
+        <li class="navigation-item"><a class="navigation-user-link" href="#">
+            <img class="navigation-logo" src="img/header-logo/cart.svg" alt="Корзина" width="16" height="14">Корзина</a>
+          <div class="popover popover-cart">
+            <div class="popover-content">
+              <h2 class="popover-title visually-hidden">Корзина</h2>
+              <ul class="cart-items-list">
+                <li class="cart-item">
+                  <a class="cart-item-link" href="#">
+                    <img class="cart-item-image" src="img/popover/product-1-small.png" width="41" height="43"
+                      alt="Любительская селфи-палка">
+                    <p class="cart-item-title">Любительская селфи-палка</p>
+                  </a>
+                  <button class="cart-item-delete"></button>
+                </li>
+                <li class="cart-item">
+                  <a class="cart-item-link" href="#">
+                    <img class="cart-item-image" src="img/popover/product-2-small.png" width="41" height="43"
+                      alt="Профессиональная селфи-палка">
+                    <p class="cart-item-title">Профессиональная селфи-палка</p>
+                  </a>
+                  <button class="cart-item-delete"></button>
+                </li>
+              </ul>
+              <div class="popover-cart-common">
+                <p class="popover-cart-common-items">Товаров: 2</p>
+                <p class="popover-cart-common-value">Сумма: 2000 &#8381;</p>
+              </div>
+              <div class="popover-cart-open">
+                <button class="popover-cart-open-cart"><span>Открыть корзину</span></button>
+              </div>
+            </div>
+          </div>
         </li>
       </ul>
       <ul class="navigation-list">
-        <li class="navigation-item"><a class="navigation-link" href="catalog.html">Каталог товаров</a><button
-            class="popover-open-button">
+        <li class="navigation-item"><a class="navigation-link navigation-link-catalog" href="catalog.html">Каталог
+            товаров</a>
+          <button class="popover-open-button">
             <svg class="navigation-plus" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"
               xmlns="http://www.w3.org/2000/svg">
               <g>
@@ -40,6 +78,39 @@
               </g>
             </svg>
           </button>
+          <div class="popover-catalog">
+            <button class="popover-close-button popover-open-button">
+              <svg class="popover-close-minus" width="16" height="16" viewBox="0 0 16 16"
+                xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <path d="M16 7H0V9H16V7Z" />
+              </svg>
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+            <div class="popover-catalog-content">
+              <h3 class="popover-title visually-hidden">Подменю каталога</h3>
+              <ul class="popover-submenu">
+                <li class="popover-submenu-item">
+                  <a class="popover-submenu-link" href="#">Виртуальная реальность</a>
+                </li>
+                <li class="popover-submenu-item">
+                  <a class="popover-submenu-link" href="#">Моноподы для селфи</a>
+                </li>
+                <li class="popover-submenu-item">
+                  <a class="popover-submenu-link" href="#">Экшн-камеры</a>
+                </li>
+                <li class="popover-submenu-item">
+                  <a class="popover-submenu-link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="popover-submenu-item">
+                  <a class="popover-submenu-link" href="#">Умные часы</a>
+                </li>
+                <li class="popover-submenu-item">
+                  <a class="popover-submenu-link" href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+
+            </div>
+          </div>
         </li>
         <li class="navigation-item"><a class="navigation-link" href="#">Доставка</a></li>
         <li class="navigation-item"><a class="navigation-link" href="#">Гарантия</a></li>
@@ -77,7 +148,7 @@
                     <button class="range-toggle toggle-min" type="button">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
-                    <button class="range-toggle toggle-max type="button">
+                    <button class="range-toggle toggle-max" type="button">
                       <span class="visually-hidden">Изменить максимальную цену.</span>
                     </button>
                   </div>
