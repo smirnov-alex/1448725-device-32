@@ -18,7 +18,7 @@
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="visually-hidden" for="search-field">Поиск по сайту</label>
+            <label class="visually-hidden" for="search-field">Поиск по сайт</label>
             <input class="search-field" placeholder="Поиск по сайту" type="email" name="newsletter-email"
               id="search-field" required>
             <!-- <button class="search-button" type="submit">
@@ -27,9 +27,9 @@
           </form>
         </li>
         <li class="navigation-item"><a class="navigation-user-link navigation-user-link-login" href="#">
-            <img class="navigation-logo" src="img/header-logo/user.svg" alt="Войти" width="13" height="12">Коля Петухов
-            <span class="logout">Выйти</span></a>
-        </li>
+          <img class="navigation-logo" src="img/header-logo/user.svg" alt="Войти" width="13" height="12">Коля Петухов
+          <span class="logout">Выйти</span></a>
+      </li>
         <li class="navigation-item"><a class="navigation-user-link" href="#">
             <img class="navigation-logo" src="img/header-logo/compare.svg" alt="Сравнить" width="10"
               height="12">Сравнить</a></li>
@@ -67,8 +67,9 @@
           </div>
         </li>
       </ul>
-      <ul class="navigation-list">
-        <li class="navigation-item"><a class="navigation-link navigation-link-catalog" href="catalog.html">Каталог
+      <div class="navigation-list">
+        <div class="navigation-catalog-wrapper">
+          <a class="navigation-link navigation-link-catalog" href="catalog.html">Каталог
             товаров</a>
           <button class="popover-open-button">
             <svg class="navigation-plus" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"
@@ -108,14 +109,16 @@
                   <a class="popover-submenu-link" href="#">Квадрокоптеры</a>
                 </li>
               </ul>
-
             </div>
           </div>
-        </li>
-        <li class="navigation-item"><a class="navigation-link" href="#">Доставка</a></li>
-        <li class="navigation-item"><a class="navigation-link" href="#">Гарантия</a></li>
-        <li class="navigation-item"><a class="navigation-link" href="#">Контакты</a></li>
-      </ul>
+
+        </div>
+        <ul class="navigation-list-main">
+          <li class="navigation-item"><a class="navigation-link" href="#">Доставка</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="#">Гарантия</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="#">Контакты</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
   <main class="main-container main-inner">

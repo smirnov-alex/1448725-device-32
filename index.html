@@ -66,8 +66,9 @@
           </div>
         </li>
       </ul>
-      <ul class="navigation-list">
-        <li class="navigation-item"><a class="navigation-link navigation-link-catalog" href="catalog.html">Каталог
+      <div class="navigation-list">
+        <div class="navigation-catalog-wrapper">
+          <a class="navigation-link navigation-link-catalog" href="catalog.html">Каталог
             товаров</a>
           <button class="popover-open-button">
             <svg class="navigation-plus" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"
@@ -107,14 +108,16 @@
                   <a class="popover-submenu-link" href="#">Квадрокоптеры</a>
                 </li>
               </ul>
-
             </div>
           </div>
-        </li>
-        <li class="navigation-item"><a class="navigation-link" href="#">Доставка</a></li>
-        <li class="navigation-item"><a class="navigation-link" href="#">Гарантия</a></li>
-        <li class="navigation-item"><a class="navigation-link" href="#">Контакты</a></li>
-      </ul>
+
+        </div>
+        <ul class="navigation-list-main">
+          <li class="navigation-item"><a class="navigation-link" href="#">Доставка</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="#">Гарантия</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="#">Контакты</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
@@ -542,7 +545,7 @@
     </div>
   </footer>
 
-  <div class="modal-container modal-container-close">
+  <div class="modal-container modal-container">
     <div class="modal modal-delivery">
       <button class="modal-close-button">
         <span class="visually-hidden">Закрыть</span>
@@ -553,12 +556,14 @@
           <p class="field-group field-group-name">
             <label class="delivery-form-label" for="name">Ваше имя:</label>
             <input class="delivery-form-field-name delivery-form-field" type="text" id="name" name="name"
-              placeholder="Имя Фамилия">
+              placeholder="Имя Фамилия" required>
+              <span class="delivery-form-field-undertext">Пожалуйста, представьтесь</span>
           </p>
           <p class="field-group field-group-email">
             <label class="delivery-form-label" for="email">Ваш e-mail:</label>
             <input class="delivery-form-field-email delivery-form-field" type="email" id="email" name="email"
               placeholder="krasotka92@mail.ru" required>
+              <span class="delivery-form-field-undertext">Забавный у вас адрес</span>
           </p>
           <p class="field-group field-group-item">
             <label class="delivery-form-label" for="item">Что нужно привезти:</label>
@@ -567,8 +572,20 @@
           </p>
           <p class="field-group field-group-amount">
             <label class="delivery-form-label-amount delivery-form-label" for="amount">Количество:</label>
-            <input class="delivery-form-field-amount delivery-form-field" type="number" id="amount" name="number"
+            <input class="delivery-form-field-amount delivery-form-field" type="number" id="amount" name="amount"
               placeholder="1">
+            <button class="button-field-amount button-field-amount-minus" type="button"><svg width="16" height="16"
+                viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                  <path d="M16 7H0V9H16V7Z" fill="black" />
+                </g>
+              </svg></button>
+            <button class="button-field-amount button-field-amount-plus" type="button"><svg width="16" height="16"
+                viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                  <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black" />
+                </g>
+              </svg></button>
           </p>
           <div class="popover-modal">
             <p>Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
