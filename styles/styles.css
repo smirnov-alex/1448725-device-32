@@ -113,6 +113,36 @@ body {
   display: block;
   width: 516px;
   margin-right: 24px;
+  position: relative;
+}
+
+.search-button {
+  position: absolute;
+  width: 160px;
+  height: 43px;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 0px 20px 20px 0px;
+  top: 0px;
+  cursor: pointer;
+  right: 0px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  display: none;
+}
+
+.search-button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.search-button:focus {
+  border-color: #AF4FFF;
+}
+
+.search-button:active span{
+  opacity: .3;
 }
 
 .logout {
@@ -137,9 +167,10 @@ body {
   background-image: url("/img/header-logo/search.svg");
   background-repeat: no-repeat;
   background-position: 8px center;
+  position: relative;
 }
 
-.search-field:hover {
+.search-field:hover::-webkit-input-placeholder {
   color:rgba(0, 0, 0, .6)
 }
 
@@ -149,6 +180,12 @@ body {
 
 .search-field:active {
   color:#000000;
+}
+
+
+.search-field:focus + button,
+.search-field:active + button {
+  display: block;
 }
 
 
@@ -640,7 +677,7 @@ body {
 }
 
 .delivery-button:focus div {
-  border: 5px solid #AF4FFF;
+  outline: 5px solid #AF4FFF;
   box-sizing: border-box;
 }
 
@@ -656,8 +693,6 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: 146px;
-  box-sizing: border-box;
-  border: 5px solid transparent;
 }
 
 .delivery:focus {
