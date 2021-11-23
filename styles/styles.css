@@ -72,8 +72,8 @@ body {
   display: block;
   margin: 0;
   padding: 0;
-  padding-left: 60px;
-  margin-bottom: 18px;
+  padding-left: 61px;
+  margin-bottom: 15.5px;
 }
 
 .navigation {
@@ -101,7 +101,7 @@ body {
 }
 
 .navigation-user {
-  grid-template-columns: 510px 240px auto auto;
+  grid-template-columns: 507px 245px 141px 138px;
   margin-bottom: 16px;
   gap: 15px;
 }
@@ -158,7 +158,7 @@ body {
   box-sizing: border-box;
   border-radius: 20px;
   padding: 10px 16px 10px;
-  padding-left: 36px;
+  padding-left: 34px;
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -168,7 +168,7 @@ body {
   color:rgba(0, 0, 0, .3);
   background-image: url("/img/header-logo/search.svg");
   background-repeat: no-repeat;
-  background-position: 8px center;
+  background-position: -2px center;
   position: relative;
 }
 
@@ -190,10 +190,15 @@ body {
   display: block;
 }
 
-
 .navigation-logo {
+  margin-right: 10px;
+}
+
+.navigation-logo-login {
   margin-right: 12px;
 }
+
+
 
 .navigation-item {
   list-style-type: none;
@@ -203,6 +208,9 @@ body {
 
 .navigation-item:nth-child(2) {
   margin-right: auto;
+}
+.navigation-item:last-child {
+  margin-left: -7px;
 }
 
 
@@ -241,7 +249,7 @@ body {
 .navigation-link-catalog {
   margin: 0;
   margin-right: -12px;
-  padding: 14px 20px 15px 0px;
+  padding: 14px 30px 15px 0px;
 }
 
 .navigation-user-link {
@@ -612,6 +620,7 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: 14px;
+  color: #000000;
 }
 
 .services-description {
@@ -768,7 +777,6 @@ body {
 .about-company-sub {
   display: flex;
   width: 1160px;
- /* margin-bottom: 87px;*/
 }
 
 .about {
@@ -870,10 +878,8 @@ body {
 .contacts-subtitle {
   font-weight: 700;
   font-size: 24px;
-  line-height: 30px;
   margin: 0;
   margin-bottom: 15px;
-
 }
 
 .contacts-address-text {
@@ -1154,7 +1160,7 @@ body {
   margin-right: 14px;
 }
 
-.footer-social-item:not(:last-child)) {
+.footer-social-item:not(:last-child) {
   margin-left: 0px;
 }
 
@@ -1597,6 +1603,7 @@ border-color: transparent;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 16px;
+  line-height: 19px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
@@ -1839,6 +1846,7 @@ border-color: transparent;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 16px;
+  line-height: 19px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;

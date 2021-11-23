@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="styles/styles.css">
-  <link rel="icon" href="/img/favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
@@ -18,7 +18,7 @@
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="visually-hidden" for="search-field">Поиск по сайт</label>
+            <label class="visually-hidden" for="search-field">Поиск по сайту</label>
             <input class="search-field" placeholder="Поиск по сайту" type="email" name="newsletter-email"
               id="search-field" required>
             <button class="search-button" type="submit">
@@ -27,7 +27,7 @@
           </form>
         </li>
         <li class="navigation-item"><a class="navigation-user-link" href="#">
-            <img class="navigation-logo" src="img/header-logo/user.svg" alt="Войти" width="13" height="12">Войти</a>
+            <img class="navigation-logo navigation-logo-login" src="img/header-logo/user.svg" alt="Войти" width="13" height="12">Войти</a>
         </li>
         <li class="navigation-item"><a class="navigation-user-link" href="#">
             <img class="navigation-logo" src="img/header-logo/compare.svg" alt="Сравнить" width="10"
@@ -44,7 +44,7 @@
                       alt="Любительская селфи-палка">
                     <p class="cart-item-title">Любительская селфи-палка</p>
                   </a>
-                  <button class="cart-item-delete"></button>
+                  <button class="cart-item-delete" type="button"></button>
                 </li>
                 <li class="cart-item">
                   <a class="cart-item-link" href="#">
@@ -52,7 +52,7 @@
                       alt="Профессиональная селфи-палка">
                     <p class="cart-item-title">Профессиональная селфи-палка</p>
                   </a>
-                  <button class="cart-item-delete"></button>
+                  <button class="cart-item-delete" type="button"></button>
                 </li>
               </ul>
               <div class="popover-cart-common">
@@ -60,7 +60,7 @@
                 <p class="popover-cart-common-value">Сумма: 2000 &#8381;</p>
               </div>
               <div class="popover-cart-open">
-                <button class="popover-cart-open-cart"><span>Открыть корзину</span></button>
+                <button class="popover-cart-open-cart" type="button"><span>Открыть корзину</span></button>
               </div>
             </div>
           </div>
@@ -70,7 +70,7 @@
         <div class="navigation-catalog-wrapper">
           <a class="navigation-link navigation-link-catalog" href="catalog.html">Каталог
             товаров</a>
-          <button class="popover-open-button">
+          <button class="popover-open-button" type="button">
             <svg class="navigation-plus" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"
               xmlns="http://www.w3.org/2000/svg">
               <g>
@@ -79,7 +79,7 @@
             </svg>
           </button>
           <div class="popover-catalog">
-            <button class="popover-close-button popover-open-button">
+            <button class="popover-close-button popover-open-button" type="button">
               <svg class="popover-close-minus" width="16" height="16" viewBox="0 0 16 16"
                 xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                 <path d="M16 7H0V9H16V7Z" />
@@ -317,10 +317,10 @@
           <li class="services-item">
             <ul class="services-tab">
               <li class="services-title">
-                <div class="services-title-active-box"><button class="services-title-active">Доставка</button></div>
+                <div class="services-title-active-box"><button class="services-title-active" type="button">Доставка</button></div>
               </li>
-              <li class="services-title"><button class="services-title-button">Гарантия</button></li>
-              <li class="services-title"><button class="services-title-button">Кредит</button></li>
+              <li class="services-title"><button class="services-title-button" type="button">Гарантия</button></li>
+              <li class="services-title"><button class="services-title-button" type="button">Кредит</button></li>
             </ul>
             <div></div>
             <div class="services-description">
@@ -336,11 +336,11 @@
           </li>
           <li class="services-item visually-hidden">
             <ul class="services-tab">
-              <li class="services-title"><button class="services-title-button">Доставка</button></li>
+              <li class="services-title"><button class="services-title-button" type="button">Доставка</button></li>
               <li class="services-title">
-                <div class="services-title-active-box"><button class="services-title-active">Гарантия</button></div>
+                <div class="services-title-active-box"><button class="services-title-active" type="button">Гарантия</button></div>
               </li>
-              <li class="services-title"><button class="services-title-button">Кредит</button></li>
+              <li class="services-title"><button class="services-title-button" type="button">Кредит</button></li>
             </ul>
             <div class="services-description">
               <h3 class="services-item-title">Гарантия</h3>
@@ -354,10 +354,10 @@
           </li>
           <li class="services-item visually-hidden">
             <ul class="services-tab">
-              <li class="services-title"><button class="services-title-button">Доставка</button></li>
-              <li class="services-title"><button class="services-title-button">Гарантия</button></li>
+              <li class="services-title"><button class="services-title-button" type="button">Доставка</button></li>
+              <li class="services-title"><button class="services-title-button" type="button">Гарантия</button></li>
               <li class="services-title">
-                <div class="services-title-active-box"><button class="services-title-active">Кредит</button></div>
+                <div class="services-title-active-box"><button class="services-title-active" type="button">Кредит</button></div>
               </li>
             </ul>
             <div class="services-description">
@@ -379,7 +379,7 @@
             <h3 class="visually-hidden">Доставка</h3>
             <img class="delivery-logo" width="47" height="31" src="img/delivery-1.svg" alt="Логотип доставки Девайс">
             <span class="delivery-description">Доставим редкий товар под заказ</span>
-            <button class="delivery-info">
+            <button class="delivery-info" type="button">
               <svg class="delivery-info-icon" width="2" height="12" viewBox="0 0 2 12" aria-hidden="true"
                 focusable="false" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.3">
@@ -548,7 +548,7 @@
 
   <div class="modal-container modal-container-close">
     <div class="modal modal-delivery">
-      <button class="modal-close-button">
+      <button class="modal-close-button" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
       <section class="modal-content">
@@ -592,7 +592,7 @@
             <p>Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
               к провозу багажа.</p>
           </div>
-          <button class="modal-button">Отправить</button>
+          <button class="modal-button" type="submit">Отправить</button>
         </form>
       </section>
     </div>
