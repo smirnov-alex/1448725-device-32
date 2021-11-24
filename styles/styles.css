@@ -65,7 +65,7 @@ body {
   width: 1160px;
   margin: 0 auto;
   color: #000000;
-  background: linear-gradient(to bottom, #FFFFFF 13.5%,#FFE17F 13.5%, #FFE17F 86.5%);
+
 }
 
 .navigation-main-logo {
@@ -81,6 +81,7 @@ body {
   flex-direction: column;
   width: 1160px;
   margin: 0 auto;
+  background: linear-gradient(to bottom, #FFFFFF 13.5%,#FFE17F 13.5%, #FFE17F 86.5%);
 }
 
 .navigation-list {
@@ -1533,7 +1534,8 @@ border-color: transparent;
 /* Catalog.html */
 
 .navigation-catalog {
-  margin-bottom: 34px;
+  padding-bottom: 35px;
+  background: linear-gradient(to bottom, #FFFFFF 11%,#FFE17F 11%, #FFE17F 86.5%);
 }
 
 .inner-header-title {
@@ -1632,6 +1634,16 @@ border-color: transparent;
   line-height: 20px;
   letter-spacing: -0.02em;
   color: #000000;
+  position: relative;
+}
+
+.catalog-filter-subtitle::after {
+  content: "";
+  position: absolute;
+  top: -13px;
+  width: 200px;
+  border-top: 2px solid #000000;
+  left: 0px;
 }
 
 .catalog-filter-label span{
@@ -1741,12 +1753,12 @@ border-color: transparent;
 .catalog-filter-group-color {
  display: flex;
  flex-direction: column;
- margin-bottom: 52px;
+ margin-bottom: 50px;
 
 }
 
 .catalog-filter-group-bluetooth {
-  margin-bottom: 45px;
+  margin-bottom: 47px;
 }
 
 .catalog-filter-list {
