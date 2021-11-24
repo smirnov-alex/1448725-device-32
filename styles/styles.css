@@ -71,9 +71,10 @@ body {
 .navigation-main-logo {
   display: block;
   margin: 0;
-  padding: 0;
-  padding-left: 61px;
+  padding: 0 61px;
   margin-bottom: 16px;
+  width: 145px;
+
 }
 
 .navigation {
@@ -180,6 +181,7 @@ body {
 
 .search-field:focus {
   border-color: #AF4FFF;
+  color:#000000;
 }
 
 .search-field:active {
@@ -1083,10 +1085,10 @@ body {
   border: 2px solid transparent;
   box-sizing: border-box;
   border-radius: 25px;
-  padding: 3px 15px 5px 0px;
+  padding: 3px 15px 5px;
   margin-top: 67px;
   margin-right: -37px;
-  margin-left: 49px;
+  margin-left: 33px;
 }
 
 .footer-contacts-address-phone:hover {
