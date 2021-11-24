@@ -149,6 +149,7 @@ body {
 
 .logout {
   opacity: 0.3;
+  margin-left: 24px;
 }
 
 .search-field {
@@ -1543,15 +1544,15 @@ border-color: transparent;
   color: #000000;
   margin: 0;
   padding: 0;
-  margin-top: 36px;
+  margin-top: 38px;
   margin-bottom: 18px;
-  padding-left: 63px;
+  padding-left: 60px;
 }
 .breadcrumbs {
   display: flex;
   margin: 0;
   padding: 0;
-  margin-bottom: 49px;
+  margin-bottom: 44px;
   padding-left: 56px;
   list-style-type: none;
   position: relative;
@@ -1571,6 +1572,7 @@ border-color: transparent;
   padding: 0;
   border: 5px solid transparent;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 .breadcrumbs-link:hover {
@@ -1616,21 +1618,21 @@ border-color: transparent;
   color: #000000;
   background-color: #DCDCDC;
   margin: 0;
-  padding: 15px 60px;
+  padding: 25px 61px;
   box-sizing: border-box;
-  margin-bottom: 87px;
+  margin-bottom: 83px;
 }
+
 .catalog-filter {
   margin-left: 60px;
 }
+
 .catalog-filter-subtitle {
   font-weight: 700;
   line-height: 20px;
   letter-spacing: -0.02em;
   color: #000000;
 }
-
-
 
 .catalog-filter-label span{
   font-size: 15px;
@@ -1653,7 +1655,6 @@ border-color: transparent;
   margin-bottom: 15px;
   background-color: #DCDCDC;
   border-radius: 2px;
-  width: 207px;
 }
 
 .range-bar {
@@ -1701,10 +1702,13 @@ border-color: transparent;
   margin-right: 5px;
   color: #000000;
   opacity: 0.3;
+  font-size: 15px;
+  line-height: 18px;
+  margin-right: 40px;
 }
 
 .range-input {
-  width: 40px;
+  width: 30px;
   padding: 0 2px;
   font: inherit;
   color: #000000;
@@ -1730,7 +1734,7 @@ border-color: transparent;
 }
 
 .catalog-filter-group-price {
-  margin-bottom: 20px;
+  margin-bottom: 48px;
   margin-top: 0px;
 }
 
@@ -1847,7 +1851,7 @@ border-color: transparent;
 .catalog-products-sorting {
   background: #EBEBEB;
   display: flex;
-  margin-bottom: 73px;
+  margin-bottom: 70px;
 }
 .catalog-sorting-title {
   font-family: "Raleway", sans-serif;
@@ -1859,13 +1863,13 @@ border-color: transparent;
   color: #000000;
   width: 150px;
   margin: 0;
-  padding: 15px 0;
+  padding: 25px 0;
   margin-left: 72px;
   padding-right: 50px;
 }
 
 .select-control {
-  width: 210px;
+  width: 204px;
   font: inherit;
   font-size: 16px;
   line-height: 19px;
@@ -1906,16 +1910,19 @@ border-color: transparent;
   cursor: pointer;
   background: #EBEBEB;
   opacity: 0.2;
+  margin-top: -9px;
 }
 
 .sorting-descending {
   padding: 0;
-  margin-left: 20px;
+  margin-left: 7px;
   border: 0;
   height: 10px;
   cursor: pointer;
   background: #EBEBEB;
   opacity: 0.2;
+  margin-right: -5px;
+  margin-top: -9px;
 }
 
 .sorting-ascending img,
@@ -1953,7 +1960,7 @@ border-color: transparent;
 .product-item {
   list-style-type: none;
   width: 360px;
-  margin-bottom: 47px;
+  margin-bottom: 46px;
 }
 
 .product-item-link {
@@ -1988,6 +1995,8 @@ border-color: transparent;
   border: 0px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -1996,7 +2005,7 @@ border-color: transparent;
   width: 180px;
   color: #000000;
   position: absolute;
-  top: 50%;
+  top: 47%;
   margin-left: auto;
   margin-right: auto;
   left: 0;
@@ -2065,6 +2074,7 @@ border-color: transparent;
 
 .download-more-button span{
   margin: auto;
+  margin-left: 292px;
 }
 
 .download-more-button:hover {
@@ -2141,11 +2151,13 @@ border-color: transparent;
 .pagination-prev {
   margin-left: 30px;
   align-self: center;
+  margin-top: 3px;
 }
 
 .pagination-next {
-  margin-right: 30px;
+  margin-right: 27px;
   align-self: center;
+  margin-top: 3px;
 }
 
 .catalog-pagination-button {
@@ -2406,6 +2418,7 @@ border-color: transparent;
   border: 2px solid transparent;
   box-sizing: border-box;
   border-radius: 25px;
+  padding: 3px 15px 5px;
 }
 
 .popover-submenu-link:hover {
