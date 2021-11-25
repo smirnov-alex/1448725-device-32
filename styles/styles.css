@@ -65,6 +65,7 @@ body {
   width: 1160px;
   margin: 0 auto;
   color: #000000;
+  margin-top: 16px;
 
 }
 
@@ -694,6 +695,11 @@ body {
 }
 
 /* About company */
+
+.delivery-wrapper {
+  position: relative;
+}
+
 .delivery-button {
   text-decoration: none;
 }
@@ -760,7 +766,9 @@ body {
   cursor: pointer;
   border-radius: 50%;
   background-color: rgba(220, 220, 220, 0.5);
-  position: relative;
+  position: absolute;
+  top: 30px;
+  right: 0px;
 }
 
 .delivery-info-icon {
@@ -1848,6 +1856,7 @@ border-color: transparent;
   display: block;
   width: 200px;
   padding: 0;
+  cursor: pointer;
 }
 
 .catalog-products-button:hover {
@@ -1990,8 +1999,8 @@ border-color: transparent;
   opacity: 0.5;
 }
 
-.product-item-link:hover button {
-  opacity: 1;
+.product-item-link:hover + button {
+  display: block;
 }
 
 .product-item-link:focus img {
@@ -2005,6 +2014,10 @@ border-color: transparent;
   color: #AF4FFF;
 }
 
+.product-main-wrapper {
+  position: relative;
+}
+
 .product-item-button{
   border: 0px;
   font-family: "Raleway", sans-serif;
@@ -2015,16 +2028,16 @@ border-color: transparent;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   background: linear-gradient(to bottom, transparent 30%,#FFC700 30%, #FFC700 70%, transparent 70%);
-  display: block;
+  display: none;
   width: 180px;
   color: #000000;
   position: absolute;
-  top: 47%;
+  top: 179px;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
-  opacity: 0;
+  cursor: pointer;
 }
 
 .product-item-image-new {
@@ -2064,9 +2077,11 @@ border-color: transparent;
 
 .product-item-button:hover {
   background-color: #FFC700;
+  display: block;
 }
 .product-item-button:active{
   color: rgba(0, 0, 0, 0.3);
+  display: block;
 }
 
 .download-more-button {
