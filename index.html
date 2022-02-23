@@ -19,8 +19,8 @@
         <li class="navigation-item">
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="search-field">Поиск по сайту</label>
-            <input class="search-field" placeholder="Поиск по сайту" type="text" name="search-key"
-              id="search-field" required>
+            <input class="search-field" placeholder="Поиск по сайту" type="text" name="search-key" id="search-field"
+              required>
             <button class="search-button" type="submit">
               <span>Найти</span>
             </button>
@@ -38,9 +38,7 @@
           </button>
           <a class="navigation-user-link" href="#">
             <img class="navigation-logo" src="img/header-logo/cart.svg" alt="Корзина" width="16" height="14">Корзина</a>
-          <div class="popover popover-cart">
-            <button class="popover-open-cart-button popover-close-cart-button" type="button">2
-            </button>
+          <div class="popover">
             <div class="popover-content">
               <h2 class="popover-title visually-hidden">Корзина</h2>
               <ul class="cart-items-list">
@@ -397,24 +395,24 @@
       <section class="about-company">
         <h2 class="visually-hidden">О компании</h2>
         <div class="delivery-wrapper">
-        <a class="delivery-button" href="#">
-          <div class="delivery">
-            <h3 class="visually-hidden">Доставка</h3>
-            <img class="delivery-logo" width="47" height="31" src="img/delivery-1.svg" alt="Логотип доставки Девайс">
-            <span class="delivery-description">Доставим редкий товар под заказ</span>
+          <a class="delivery-button" href="#">
+            <div class="delivery">
+              <h3 class="visually-hidden">Доставка</h3>
+              <img class="delivery-logo" width="47" height="31" src="img/delivery-1.svg" alt="Логотип доставки Девайс">
+              <span class="delivery-description">Доставим редкий товар под заказ</span>
 
-          </div>
-        </a>
-        <button class="delivery-info" type="button">
-          <svg class="delivery-info-icon" width="2" height="12" viewBox="0 0 2 12" aria-hidden="true"
-            focusable="false" xmlns="http://www.w3.org/2000/svg">
-            <g opacity="0.3">
-              <path d="M2 0H0V2H2V0Z" />
-              <path d="M2 4H0V12H2V4Z" />
-            </g>
-          </svg>
-        </button>
-      </div>
+            </div>
+          </a>
+          <button class="delivery-info" type="button">
+            <svg class="delivery-info-icon" width="2" height="12" viewBox="0 0 2 12" aria-hidden="true"
+              focusable="false" xmlns="http://www.w3.org/2000/svg">
+              <g opacity="0.3">
+                <path d="M2 0H0V2H2V0Z" />
+                <path d="M2 4H0V12H2V4Z" />
+              </g>
+            </svg>
+          </button>
+        </div>
         <div class="about-company-sub">
           <div class="about">
             <h3 class="about-title">О нас</h3>
@@ -622,6 +620,8 @@
       </section>
     </div>
   </div>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
